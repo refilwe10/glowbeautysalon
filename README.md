@@ -56,5 +56,5 @@ To further improve the SEO of Glow Beauty Salon, the following off-page strategi
 
 ## Deployment Details
 - **Platform:** Netlify
-- **Live URL:** https://glow-beauty-salon-st10472694.netlify.app
+- **Live URL:** https://glow-beauty-s.netlify.app
 - **Security/Page Speed:** Images use lazy loading to improve page speed. The site uses HTTPS provided by Netlify.
