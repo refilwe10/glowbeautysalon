@@ -1,11 +1,7 @@
 # Glow Beauty Salon Website
 
 ## Student Information
-- **Name:** [Abigain Mntombeni
- ]
-- **Student Number:** ST10472694
-- **Subject:** [Subject Name and Code]
-- **Group:** [Your Group if applicable]
+- **Name:** refilwe phore
 
 ## Project Overview
 A professional, elegant, responsive website for Glow Beauty Salon — a luxury beauty salon offering hair, nail, makeup, and facial treatments. The site is designed to establish a strong online presence, showcase services with pricing, and provide an effortless booking experience for clients.
