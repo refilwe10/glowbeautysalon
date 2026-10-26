@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – Glow Beauty Salon | Two Locations in Johannesburg</title>
+    <meta name="description" content="Contact Glow Beauty Salon. Visit our two locations in Johannesburg or send us a message online.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>Glow Beauty Salon</h1></div>
+        <button class="menu-toggle" id="menuToggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-hero" class="contact-hero">
+            <span class="hero-tag">✦ Get in Touch</span>
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you!</p>
+        </section>
+
+        <div class="contact-grid">
+            <section id="contact-details" class="reveal">
+                <h2>Get in Touch</h2>
+                <address>
+                    <p><strong>Address:</strong> 123 Serenity Lane, City Centre, Johannesburg, 2000</p>
+                    <p><strong>Phone:</strong> +27 11 234 5678</p>
+                    <p><strong>Email:</strong> info@glowbeautysalon.co.za</p>
+                </address>
+            </section>
+            <section id="second-location" class="reveal">
+                <h2>Second Location</h2>
+                <address>
+                    <p><strong>Address:</strong> 456 Oak Avenue, Sandton, Johannesburg, 2196</p>
+                    <p><strong>Phone:</strong> +27 11 876 5432</p>
+                </address>
+            </section>
+        </div>
+
+        <section class="map-section reveal">
+            <div class="section-header">
+                <span class="section-tag">Find Us</span>
+                <h2>Visit Our Studio</h2>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.7776!2d28.0400000!3d-26.2041000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDEyJzE0LjgiUyAyOMKwMDInMjQuMCJF!5e0!3m2!1sen!2sza!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section id="quick-contact" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">Send a Message</span>
+                <h2>Quick Contact</h2>
+            </div>
+
+            <!-- FORM ACTION ADDED HERE (mailto) -->
+            <form id="contactForm" action="mailto:info@glowbeautysalon.co.za" method="post" enctype="text/plain" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">Name <span class="required">*</span></label>
+                    <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email <span class="required">*</span></label>
+                    <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <!-- TYPE OF MESSAGE DROPDOWN ADDED HERE -->
+                    <label for="contact-type">Type of Message <span class="required">*</span></label>
+                    <select id="contact-type" name="type" required>
+                        <option value="">-- Select a topic --</option>
+                        <option value="General Enquiry">General Enquiry</option>
+                        <option value="Complaint">Complaint</option>
+                        <option value="Feedback">Feedback / Compliment</option>
+                        <option value="Corporate Event">Corporate Event Booking</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message <span class="required">*</span></label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Type your full message here..." required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <div id="contactFeedback" class="form-feedback"></div>
+                <button type="submit" class="btn btn-submit">📧 Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <footer>
+        <p>&copy; 2026 Glow Beauty Salon. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

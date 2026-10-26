@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment – Glow Beauty Salon | Online Enquiry</title>
+    <meta name="description" content="Book your appointment at Glow Beauty Salon online. Fill in your details and we'll confirm within 24 hours.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>Glow Beauty Salon</h1></div>
+        <button class="menu-toggle" id="menuToggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="booking-hero" class="booking-hero">
+            <span class="hero-tag">✦ Book Now</span>
+            <h1>Book Your Appointment</h1>
+            <p>Reserve your spot — we'll confirm within 24 hours.</p>
+            <!-- Modal Trigger Button -->
+            <button id="openPolicyBtn" class="btn btn-outline" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1rem;">📄 View Booking Policy</button>
+        </section>
+
+        <div class="booking-layout">
+            <section class="booking-form-wrapper">
+                <form id="enquiryForm" novalidate>
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <span class="step-number">1</span>
+                            <h2>Your Details</h2>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="e.g. Sarah Johnson" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="+27 82 123 4567" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-type">I am a...</label>
+                                <select id="client-type" name="client-type">
+                                    <option value="new">New Client</option>
+                                    <option value="returning">Returning Client</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <span class="step-number">2</span>
+                            <h2>Service Details</h2>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Service Category <span class="required">*</span></label>
+                                <select id="service" name="service" required>
+                                    <option value="">-- Please select --</option>
+                                    <option value="hair">Hair Services</option>
+                                    <option value="nails">Nail Services</option>
+                                    <option value="makeup">Makeup Services</option>
+                                    <option value="facial">Facial Treatments</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="stylist">Preferred Stylist</label>
+                                <select id="stylist" name="stylist">
+                                    <option value="any">No Preference</option>
+                                    <option value="elena">Elena (Aesthetician)</option>
+                                    <option value="maria">Maria (Hair Stylist)</option>
+                                    <option value="sofia">Sofia (Nail & Makeup)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date <span class="required">*</span></label>
+                                <input type="date" id="date" name="date" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time <span class="required">*</span></label>
+                                <select id="time" name="time" required>
+                                    <option value="">-- Select time --</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="13:00">01:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <span class="step-number">3</span>
+                            <h2>Additional Information</h2>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Requests or Notes</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any allergies, special requests, or additional information..."></textarea>
+                        </div>
+                    </div>
+
+                    <div id="formFeedback" class="form-feedback"></div>
+                    <button type="submit" class="btn btn-submit"> Confirm My Booking</button>
+                    <p class="form-note"><span class="required">*</span> Required fields.</p>
+                </form>
+            </section>
+
+            <aside class="booking-sidebar">
+                <div class="sidebar-card">
+                    <h3> Visit Us</h3>
+                    <p><strong>Main Studio</strong></p>
+                    <p>123 Serenity Lane<br>City Centre, Johannesburg</p>
+                </div>
+                <div class="sidebar-card">
+                    <h3> Opening Hours</h3>
+                    <ul class="hours-list">
+                        <li><span>Mon – Fri</span><span>09:00 – 18:00</span></li>
+                        <li><span>Saturday</span><span>09:00 – 16:00</span></li>
+                        <li><span>Sunday</span><span>Closed</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-card highlight">
+                    <h3> Need Help?</h3>
+                    <p class="phone-number">+27 11 234 5678</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- MODAL: Booking Policy -->
+    <div id="policyModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" id="closePolicyBtn">&times;</span>
+            <h2>Booking Policy</h2>
+            <p>To ensure the best experience for all our clients, please note the following:</p>
+            <ul>
+                <li>Arrive 10 minutes before your appointment.</li>
+                <li>Cancellations must be made 24 hours in advance.</li>
+                <li>Late arrivals over 15 minutes may require rescheduling.</li>
+                <li>A 50% deposit is required for all bridal bookings.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <footer>
+        <p>&copy; 2026 Glow Beauty Salon. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

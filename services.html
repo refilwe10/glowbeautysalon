@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services – Glow Beauty Salon | Hair, Nails, Makeup & Facials</title>
+    
+    <meta name="description" content="Explore our luxury beauty services: hair styling, nail care, professional makeup, and rejuvenating facials. View pricing and book online.">
+    <meta name="keywords" content="hair services, nail services, makeup services, facial treatments, beauty salon services, prices Johannesburg">
+    <meta name="author" content="Glow Beauty Salon">
+    
+    <meta property="og:title" content="Services – Glow Beauty Salon">
+    <meta property="og:description" content="Luxury beauty services with transparent pricing.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Glow Beauty Salon</h1>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="services-hero" class="services-hero">
+            <span class="hero-tag">✦ Our Services</span>
+            <h1>Luxury Beauty Treatments</h1>
+            <p>Click on any service to view pricing. Use the search below to find what you need.</p>
+        </section>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="serviceSearch" placeholder="🔍 Search services (e.g. hair, nails, facial)..." aria-label="Search services">
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+
+            <section class="service-card" data-service="hair">
+                <div class="service-image">
+                    <img src="images/hair-service.jpg" 
+                         alt="Professional hair styling service at Glow Beauty Salon" 
+                         class="lightbox-trigger" 
+                         data-large="images/hair-service.jpg"
+                         loading="lazy">
+                </div>
+                <h2>Hair Services</h2>
+                <p class="service-summary">Expert cuts, colour, and styling for every occasion.</p>
+                <button class="price-toggle" data-target="hair-prices">View Pricing ▾</button>
+                <div id="hair-prices" class="price-panel">
+                    <h3>Price List</h3>
+                    <ul>
+                        <li><strong>Precision Haircut</strong> — R350</li>
+                        <li><strong>Balayage & Highlights</strong> — R850</li>
+                        <li><strong>Bridal Hair</strong> — R1,200</li>
+                        <li><strong>Blow Dry & Style</strong> — R250</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="service-card" data-service="nails">
+                <div class="service-image">
+                    <img src="images/nail-service.jpg" 
+                         alt="Manicure and nail art services" 
+                         class="lightbox-trigger" 
+                         data-large="images/nail-service.jpg"
+                         loading="lazy">
+                </div>
+                <h2>Nail Services</h2>
+                <p class="service-summary">Beautiful, long-lasting nails for every style.</p>
+                <button class="price-toggle" data-target="nail-prices">View Pricing ▾</button>
+                <div id="nail-prices" class="price-panel">
+                    <h3>Price List</h3>
+                    <ul>
+                        <li><strong>Classic Manicure</strong> — R200</li>
+                        <li><strong>Gel Nails</strong> — R350</li>
+                        <li><strong>Nail Art</strong> — R450</li>
+                        <li><strong>Pedicure</strong> — R300</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="service-card" data-service="makeup">
+                <div class="service-image">
+                    <img src="images/makeup-service.jpg" 
+                         alt="Professional makeup application" 
+                         class="lightbox-trigger" 
+                         data-large="images/makeup-service.jpg"
+                         loading="lazy">
+                </div>
+                <h2>Makeup Services</h2>
+                <p class="service-summary">Flawless looks for weddings, events, and everyday glam.</p>
+                <button class="price-toggle" data-target="makeup-prices">View Pricing ▾</button>
+                <div id="makeup-prices" class="price-panel">
+                    <h3>Price List</h3>
+                    <ul>
+                        <li><strong>Natural Glam</strong> — R450</li>
+                        <li><strong>Bridal Makeup</strong> — R1,500</li>
+                        <li><strong>Special Occasion</strong> — R600</li>
+                        <li><strong>Makeup Lesson</strong> — R800</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="service-card" data-service="facial">
+                <div class="service-image">
+                    <img src="images/facial-service.jpg" 
+                         alt="Rejuvenating facial treatment" 
+                         class="lightbox-trigger" 
+                         data-large="images/facial-service.jpg"
+                         loading="lazy">
+                </div>
+                <h2>Facial Treatments</h2>
+                <p class="service-summary">Rejuvenating skincare tailored to your needs.</p>
+                <button class="price-toggle" data-target="facial-prices">View Pricing ▾</button>
+                <div id="facial-prices" class="price-panel">
+                    <h3>Price List</h3>
+                    <ul>
+                        <li><strong>Glow Signature Facial</strong> — R650</li>
+                        <li><strong>Hydrating Facial</strong> — R550</li>
+                        <li><strong>Anti-Ageing Facial</strong> — R750</li>
+                        <li><strong>Deep Cleanse Facial</strong> — R500</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <div id="noResults" class="no-results" style="display:none;">
+            <p>s No services match your search. Try a different keyword.</p>
+        </div>
+
+    </main>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-overlay">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" alt="Enlarged view">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Glow Beauty Salon. All rights reserved.</p>
+        <p>Follow us on Instagram | Facebook</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
